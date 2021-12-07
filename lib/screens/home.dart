@@ -34,7 +34,7 @@ class Categories extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         //Clasificacion menu
-        color: Colors.red,
+        color: Color(0xFF80191A),
         height: 130,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -58,18 +58,16 @@ class category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
-      height: 150,
-      // width: 150,
-      // color: Colors.black38,
+      height: 110,
+      width: 105,
       decoration: BoxDecoration(
           color: Colors.black,
-          border: Border.all(
-              color: Colors.amber, // Set border color
-              width: 3.0), // Set border width
+          border: Border.all(color: Colors.amber, width: 3.0),
           borderRadius: BorderRadius.all(Radius.circular(10.0))),
       child: Text(
         this.text,
         style: TextStyle(color: Colors.white),
+        textAlign: TextAlign.center,
       ),
     );
   }

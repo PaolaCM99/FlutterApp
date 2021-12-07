@@ -1,3 +1,5 @@
+import 'package:firstproyectflutter/screens/Melona.dart';
+import 'package:firstproyectflutter/screens/veinte.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -9,7 +11,6 @@ class Restaurans extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // color: Colors.blueGrey,
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage(
@@ -69,10 +70,15 @@ class Restaurans extends StatelessWidget {
                         height: 30,
                         width: 200,
                         child: ElevatedButton(
-                          child: Text('VER MENU',
-                              style: TextStyle(color: Colors.black)),
+                          child: Text('VER MENÚ',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold)),
                           onPressed: () {
-                            // Respond to button press
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Melona()),
+                            );
                           },
                           style: ButtonStyle(
                               backgroundColor:
@@ -103,10 +109,15 @@ class Restaurans extends StatelessWidget {
                         height: 30,
                         width: 200,
                         child: ElevatedButton(
-                          child: Text('VER MENU',
-                              style: TextStyle(color: Colors.black)),
+                          child: Text('VER MENÚ',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold)),
                           onPressed: () {
-                            // Respond to button press
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Veinte()),
+                            );
                           },
                           style: ButtonStyle(
                               backgroundColor:

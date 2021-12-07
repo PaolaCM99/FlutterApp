@@ -14,19 +14,59 @@ class HappyHour extends StatelessWidget {
         child:
             Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           Container(
-            height: 230,
-            color: Colors.blueGrey[900],
-            child: Text(
-              "DE LUNES A VIERNES DE 4PM A 7PM DISFRUTA DE NUESTRO HAPPY HOUR.",
-              style: GoogleFonts.bebasNeue(
-                  textStyle: TextStyle(
-                color: Color(0xFFE7B31E),
-                fontSize: 25.0,
-                height: 1.8,
+              height: 350,
+              color: Colors.grey[850],
+              width: 500,
+              child: Container(
+                width: 200,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      "DE LUNES A VIERNES DE 4PM A 7PM DISFRUTA DE NUESTRO HAPPY HOUR.",
+                      style: GoogleFonts.bebasNeue(
+                          textStyle: TextStyle(
+                        color: Color(0xFFE7B31E),
+                        fontSize: 28.0,
+                        height: 1.8,
+                      )),
+                      textAlign: TextAlign.center,
+                    ),
+                    Text(
+                      "Los mejores cócteles y mocktails cero alcohol y con full actitud",
+                      style: GoogleFonts.comfortaa(
+                          textStyle: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18.0,
+                        height: 1.8,
+                      )),
+                      textAlign: TextAlign.center,
+                    ),
+                    ElevatedButton(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 15.0, horizontal: 10),
+                        child: Text('VER MENU DEL HAPPY HOUR',
+                            style: TextStyle(
+                                color: Colors.amber,
+                                fontWeight: FontWeight.bold)),
+                      ),
+                      onPressed: () {
+                        // Respond to button press
+                      },
+                      style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.transparent),
+                          shape:
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(18.0),
+                                      side: BorderSide(color: Colors.amber)))),
+                    ),
+                  ],
+                ),
               )),
-              textAlign: TextAlign.center,
-            ),
-          ),
           Container(
             color: Colors.grey[900],
             height: 180,

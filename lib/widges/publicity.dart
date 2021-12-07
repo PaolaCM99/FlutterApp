@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Publicity extends StatelessWidget {
   const Publicity({Key? key}) : super(key: key);
@@ -6,10 +7,14 @@ class Publicity extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Colors.grey[700],
+        color: Colors.grey,
         height: 130,
         child: Center(
             child: Text("PUBLICIDAD",
-                style: TextStyle(color: Colors.white, fontSize: 25.0))));
+                style: GoogleFonts.bebasNeue(
+                    textStyle: TextStyle(
+                        color: Colors.white,
+                        fontSize: 35.0,
+                        fontWeight: FontWeight.normal)))));
   }
 }
